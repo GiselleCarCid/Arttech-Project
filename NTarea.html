@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Nueva Tarea</title>
+    <link rel="stylesheet" href="NTarea.css">
+    <script defer src="NTarea.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="user-page.html">
+                    <img src="casa.png" alt="Home" class="home-icon">
+                </a>
+                </li>
+                <div class="div-item">
+                <li><a href="#services">Tareas</a></li>
+                </div>
+                <div class="div-item">
+                <li><a href="#about">Eventos</a></li>
+                </div>
+                <div class="div-item">
+                <li><a href="#contact">Bitácoras</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <div class="user-details">
+                <span id="user-name">Nombre Usuario</span>
+                <span id="user-role">Cargo</span>
+            </div>
+            <a href="user-page.html">
+                <img src="usuario.png" alt="Usuario" class="user-icon">
+            </a>
+        </div>
+    </header>
+    <form>
+        <h2>Asignar nueva tarea</h2>
+        <fieldset>
+            <label for="empleado">Empleado
+                <select id="dropdown"> 
+                    <option>Selección</option>
+                    <option>Francisco García</option>
+                    <option>Karen Avelar</option>
+                    <option>Salvador Gámez</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="tarea">Tarea a Asignar
+                <select id="dropdown"> 
+                    <option>Selección</option>
+                    <option>Limpieza</option>
+                    <option>Revisión</option>
+                    <option>Acomodo</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="name-label">Fecha Limite <input type="date" id="start" 
+                name="trip-start" value="2024-06-06" min="2024-06-06" max="2028-12-31" />
+        </fieldset>
+        <fieldset>
+            <label for="time-input">Hora Limite</label>
+            <input type="time" id="time-input" name="time-input" required>
+        </fieldset>
+        <input id ="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>

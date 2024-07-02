@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Bitacorá</title>
+    <link rel="stylesheet" href="Bitacoras.css">
+    <script defer src="Bitacoras.js"></script>
+</head>
+
+<body>
+    <h2>Nueva Bitácora</h2>
+    <form>
+        <fieldset>
+            <label id="nom-empleado">Nombre: </label>
+        </fieldset>
+        <fieldset>
+            <label id="id-empleado">ID de empleado: </label>
+        </fieldset>
+        <fieldset>
+            <label class="fecha">Fecha* <input type="date" id="start" name="trip-start" value="2024-00-00" min="2024-06-06" max="2028-12-31" /></label>
+        </fieldset>
+        <div id="contenedor-fieldset">
+            <fieldset>
+                <label id="titulo-label">Nombre de la actividad*<input id="titulo" type="text" placeholder="Ingrese el nombre de la actividad" required /></label>
+            </fieldset>
+            <fieldset>
+                <label>Descripción*
+                    <textarea></textarea>
+                </label>
+            </fieldset>
+        </div>
+        <fieldset class="grupo-boton">
+            <button class="botones" type="button" onclick="addFieldset()">Agregar Actividad</button>
+        </fieldset>
+        <fieldset>
+            <label>Observaciones
+                <textarea></textarea>
+            </label>
+        </fieldset>
+        <fieldset class="grupo-boton">
+            <button class="upload-button botones" type="button" onclick="document.getElementById('file-upload').click()">Adjuntar Archivo</button>
+            <input type="file" id="file-upload" style="display: none;" />
+        </fieldset>
+        <input id="submit" type="submit" value="Registrar Bitácora" />
+    </form>
+</body>
+
+</html>

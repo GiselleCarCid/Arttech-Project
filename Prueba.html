@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitas Agendadas</title>
+    <link rel="stylesheet" href="Prueba.css">
+    <script defer src="Prueba.js"></script>
+</head>
+
+<body>
+    <h2>Eventos y Visitas Agendadas</h2>
+    <div class="container">
+        <ul class="visit-list">
+            <li class="visit-item f-item">
+                <div class="visit-header f-item">
+                    <div class="circle">
+                        <div class="date-circle">
+                            <div class="day">7</div>
+                        </div>
+                        <div class="month">Jun</div>
+                    </div>
+                    <button class="visit-toggle f-item">Recorrido histórico del museo</button>
+                    <div class="add-attachment">
+                        <a href="#" class="open-modal">
+                            <img src="file-add.png" alt="Files" class="FBrowser-icon">
+                        </a>
+                    </div>
+                    <img src="dropdown.png" alt="Drop" class="dropdown-icon">
+                </div>
+                <div class="visit-details">
+                    <p>Fecha: 2024-06-07</p>
+                    <p>Hora: 10:00 a.m.</p>
+                    <p>Número de participantes: 20</p>
+                    <p>Observaciones: Primera visita</p>
+                </div>
+            </li>
+            <!-- Agrega más visitas aquí -->
+        </ul>
+    </div>
+
+    <!-- Modal para adjuntar archivos -->
+    <div id="fileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Adjuntar Archivos</h2>
+            <form id="fileForm">
+                <input type="file" id="fileInput" multiple>
+                <button type="submit">Subir Archivos</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
