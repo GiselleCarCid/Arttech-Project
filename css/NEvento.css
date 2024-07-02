@@ -1,0 +1,162 @@
+/* Estilos básicos para el body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #79553D;
+    padding: 10px 20px;
+    position: relative; /* Necesario para posicionar el nav-menu */
+}
+
+/* Estilos para el icono de hamburguesa */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Estilos para la información del usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info a {
+    display: inline-block;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.user-details {
+    color: white;
+    display: flex;
+    flex-direction: column; /* Coloca el nombre y el cargo uno sobre otro */
+    text-align: left;
+}
+
+#user-name{
+    font-size: 14px;
+}
+
+#user-role {
+    font-size: 11px;
+}
+
+/* Ocultar el menú por defecto */
+.nav-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Menú ocupará todo el alto de la pantalla */
+    width: 20%; /* Menú ocupará solo el 30% del ancho de la pantalla */
+    background-color: #CBC9BD;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-top: 60px; /* Espacio para el header */
+}
+
+.home-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    text-align: center; /* Alinear el texto a la izquierda */
+    padding: 15px 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-menu .div-item:hover {
+    background-color: #B5AA98;
+}
+
+/* Mostrar el menú cuando está activo */
+.nav-menu.active {
+    display: block;
+}
+
+form{
+    background-color:#CBC9BD; 
+    width:100%; /* Hace que el formulario ocupe el 100% del ancho disponible */
+    max-width: 500px; /* Establece un ancho máximo para el formulario */
+    min-width: 300px;
+    margin: 3rem auto;
+    padding: 0 2em 2em;
+    font-family:"Gill Sans", sans-serif;
+    font-size: 18px;
+    border-radius: 5px; /* Añade esquinas redondeadas para un aspecto más suave */
+    overflow: hidden; /* Evita que el contenido desborde el formulario */
+}
+
+h2{
+    color: #FFFFFF;
+}
+
+fieldset{
+    border: none;
+    padding: auto;
+    border-bottom: 3px;
+}
+
+label {
+    display: block;
+    margin: auto;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0;
+    border: 1px solid #737373; /* Establece el color y el grosor del borde */
+    width: 100%;
+    min-height: 2em;
+    border-radius: 0.4em;
+}
+
+input[type="submit"]{
+    width: 100%;
+    border: 1px solid #242927; /* Establece el color y el grosor del borde */
+    background-color: #242927;
+    min-height: 40px;
+    border-radius: 20px;
+    color: #f5f6f7;
+    font-family:"Gill Sans", sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+}
